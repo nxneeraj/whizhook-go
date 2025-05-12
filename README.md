@@ -10,7 +10,7 @@ Whizhook-Go is a single-binary Go CLI that automates:
 
 ## Installation
 ```bash
-git clone https://github.com/youruser/whizhook-go.git
+git clone https://github.com/nxneeraj/whizhook-go.git
 cd whizhook-go
 go mod tidy
 go build -o whizhook cmd/whizhook/main.go
