@@ -10,9 +10,9 @@ import (
     "os/exec"
     "path/filepath"
     "time"
-
+    "strings"
     "html/template"
-
+    "embed"
     "github.com/gorilla/mux"
     "github.com/gorilla/websocket"
     "github.com/rs/cors"
@@ -22,7 +22,7 @@ import (
 //go:embed ../templates/payload.js.tpl
 var payloadJSTpl string
 
-//go:embed ../templates/font-payload.xml.tpl
+files, err := filepath.Glob("../templates/*.tpl") 
 var fontXMLTpl string
 
 var upgrader = websocket.Upgrader{
